@@ -4,11 +4,13 @@
     font-family: poppin, sans-serif;
     box-sizing: border-box;
 }
+/*===========Navigation-Bar CSS start===========*/
 
 .logo{
    display: flex;
    align-items: center;
 }
+
 .logo img{
     width: 55px;
     height: 55px;
@@ -16,14 +18,17 @@
     border-radius: 50px;
     object-fit:cover;
 }
+
 .logo img:hover{
     transform: scale(0.9);
 }
+
 .logo h2{
        color: white;
        padding: 10px 40px 10px 10px;
        letter-spacing: 1px;
 }
+
 .navbar{
     display: flex;
     align-items: center;
@@ -139,10 +144,15 @@
     mix-blend-mode: darken;
 }
 
+/*==========Navigation-bar Css End here=========*/
+
+/*==========First-section Css start here========*/
+
 .first-section{
     height: 90vh;
     padding-top:80px;
 }
+
 .main-box{
     display: flex;
     justify-content: center;
@@ -212,13 +222,35 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+/*===============First-section css end here =============*/
+/*===============Second-section css start here===========*/
+
+.sec-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sec-head h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.sec-head p{
+    letter-spacing: 2px;
+    font-size: 18px;
+}
 .crd-sec{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     flex-wrap: wrap;
-    gap: 100px 50px;
+    gap: 100px 25px;
     padding: 100px 50px;
 }
 .crd-sec .card{
