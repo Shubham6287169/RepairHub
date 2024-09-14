@@ -226,6 +226,8 @@
     text-transform: uppercase;
     color: hotpink;
     width: 100%;
+    font-weight: 600;
+    font-style: italic;
 }
 
 /*===============First-section css end here =============*/
