@@ -4,6 +4,7 @@
     font-family: poppin, sans-serif;
     box-sizing: border-box;
 }
+
 /*===========Navigation-Bar CSS start===========*/
 
 .logo{
@@ -162,6 +163,7 @@
     padding-top: 20px;
     margin: auto;
     height: 80%;
+    
 }
 
 .first-half{
@@ -200,6 +202,7 @@
        font-weight: bold;
        color: hotpink;
        position: relative;
+       text-transform: none;
 }
 
 .text-big span::after{
@@ -218,9 +221,11 @@
 }
 
 .text-small{
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: hotpink;
+    width: 100%;
 }
 
 /*===============First-section css end here =============*/
@@ -278,9 +283,11 @@
 }
 .crd-sec .card:hover .img{
     top: -100px;
-    scale: 0.9;
+    scale: 0.8;
 }
 .crd-sec .card:hover{
     height: 350px;
     transition: height 0.6s ease;
 }
+
+

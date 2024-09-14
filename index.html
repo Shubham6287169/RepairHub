@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repair Your Device</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -28,8 +30,8 @@
     <section class="background first-section">
             <div class="main-box">
                 <div class="first-half">
-                    <p class="text-big">Repairing Services Provide by the <span>RepairHUB</span> on your Door Step</p>
-                    <p class="text-small">We will serve you better Service ever.</p>
+                    <p class="text-big" >Repairing Services Provide by the <span>REPAIRHUB</span> on your Door Step</p>
+                    <p class="text-small"></p>
                     <div class="buttons">
                         <button class="btn btn-mt">Read More...</button>
                     </div>
@@ -45,7 +47,7 @@
     <div class="sec-head">
     <h2>Our Repairing process</h2>
      <p>You Can Understand Our Repairing Process Below Steps</p></div>
-    <section class="crd-sec">
+    <section class="crd-sec" data-aos="zoom-in">
         <div class="card">
            <div class="img"></div>
            <div class="content"></div>
@@ -68,7 +70,7 @@
     <div class="sec-head">
         <h2>Our Team</h2>
          <p>You Can Understand Our Repairing Process Below Steps</p></div>
-        <section class="crd-sec">
+        <section class="crd-sec" data-aos="zoom-in-up">
             <div class="card">
                <div class="img"></div>
                <div class="content"></div>
@@ -86,6 +88,14 @@
                 <div class="content"></div>
             </div>
         </section>
-<script src="script.js"></script>
+<!--Our AOS Data-->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+    AOS.init({
+        offset:350,
+        duration:1000
+    });
+  </script>
+ <script src="script.js"></script>
 </body>
 </html>
