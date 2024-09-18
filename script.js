@@ -1,9 +1,3 @@
-/*let typed = new Typed(".text-small",{
-strings:["WELCOME TO  RepairHUB.","WE WILL SERVE YOU BETTER SERVICE."],
-typeSpeed:150,
-backSpeed:150,
-looped :true
-})*/
 let p = document.querySelector(".text-small");
 
 
@@ -45,4 +39,47 @@ function typewriterEffect(element, text, i = 0) {
 }
 
 typewriterEffect(p, text);
+
+window.addEventListener('load', adjustLayout);
+window.addEventListener('resize', adjustLayout);
+
+function adjustLayout() {
+    const width = window.innerWidth;
+    const logoImg = document.querySelector('.logo img');
+    const firstHalf = document.querySelector('.first-half');
+    const secondHalf = document.querySelector('.second-half');
+
+    // Adjust card layout for smaller screens
+    if (width <= 768) {
+        
+        // Reduce logo size on smaller screens
+        logoImg.style.width = '40px';
+        logoImg.style.height = '40px';
+
+        // Hide second half (image) on small screens
+        secondHalf.style.display = 'none';
+        firstHalf.style.width = '100%';
+
+    } else {
+       
+        // Reset logo size for larger screens
+        logoImg.style.width = '55px';
+        logoImg.style.height = '55px';
+
+        // Show second half on larger screens
+        secondHalf.style.display = 'block';
+        firstHalf.style.width = '75%';
+    }
+}
+
+// Function to toggle the mobile menu on smaller screens
+function toggleMenu() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('active');
+}
+
+// Add event listener to the hamburger menu button for small screens
+const menuToggle = document.querySelector('.menu-toggle');
+menuToggle.addEventListener('click', toggleMenu);
+
 
