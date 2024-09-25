@@ -1,0 +1,94 @@
+*{
+ margin: 0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+/* CSS for the form section only */
+body{
+    background-color: #333;
+}
+
+/* Form container styling */
+.sec-1 {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the form */
+.sec-1 p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form field containers */
+.sec-form form div {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Input fields, select boxes, and textarea styling */
+.input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Input fields focus effect */
+.input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Textarea height and resize */
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+/* Button styling */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .sec-1 {
+        padding: 20px;
+        margin: 20px;
+    }
+}
