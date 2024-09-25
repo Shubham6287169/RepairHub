@@ -265,9 +265,8 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    background-color: black;
-    border: 1px solid black;
-    height: 250px;
+    background-color: white;
+    height: 270px;
     width: 300px;
     border-radius: 10px;
     cursor: pointer ;
@@ -277,19 +276,51 @@
 .crd-sec .card .img{
     position: absolute;
     top: 10px;
-    background-color: bisque;
     width: 200px;
-    height: 150px;
+    height: 200px;
     border-radius: 10px;
     transition: 0.5s;
+    border-radius: 50%;
 }
+.crd-sec .card .img img{
+    height:180px;
+    width: 180px;
+    position: relative;
+    left: 10px;
+}
+.crd-sec .card .content{
+    text-wrap: wrap;
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+   
+}
+.crd-sec .card .content:hover{
+    position: relative;
+    top: 150px;
+    height: 400px;
+    overflow: scroll;
+}
+.crd-sec .card .content h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 7px;
+    color: rgb(235, 154, 167);
+}
+
+
 .crd-sec .card:hover .img{
-    top: -100px;
+    top: -120px;
     scale: 0.8;
 }
 .crd-sec .card:hover{
     height: 350px;
-    transition: height 0.6s ease;
+    transition: height 0.4s ease;
+    border: 2px solid #cfd1d4;
 }
 
 .menu-toggle {
@@ -317,6 +348,194 @@
     .right-nav {
         display: none;
     }
+}
+ .Pickup{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+ }
+ 
+ .Pickup-left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+ }
+ .h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #cfd1d4;
+    letter-spacing: 2px;
+    margin: 20px 0;
+ }
+ .details{
+    width: 80%;
+    padding:  98px;
+ }
+.m-left{
+    margin-left: 45px;
+     width: 300px;
+}
+ .pickup-img img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+
+ }
+.pickup-img img:hover{
+    transform: scale(1.2);
+    transition: transform 4s ease;
+}
+ 
+
+ .details li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: 500;
+    text-decoration: underline;
+ }
+
+ .prah{
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-wrap: wrap;
+ }
+
+ @media (max-width: 768px){
+    .Pickup{
+        width: 100%;
+        padding: 50px;
+        flex-wrap: wrap;
+    }
+
+    .Pickup-left{
+        width: 100%;
+        height: 30%;
+    }
+    .details{
+        max-width: 100%;
+        padding: 40px;
+    }
+ }
+/*  Brand name cards */
+.mobiles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    align-items: center;
+    flex-direction: column;
+    background: blue;
+}
+
+.mobiles p{
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-wrap: wrap;
+    margin-top: 10px;
+    color: white;
+}
+.mobile-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+ .img img {
+    height: 150px;
+    width: 200px;
+    box-shadow: 0 0 10 10 rgb(0, 0, 0.7);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1px;
+    border: 1px solid yellow;
+    margin-bottom: 10px;
+ }
+
+ .btn3{
+     display: flex;
+     justify-content: center;
+     margin-top: 40px;
+     margin-bottom: 20px;
+ }
+ 
+.btn3 button {
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: orange;
+    cursor: pointer;    
+    
+    &:hover{
+         background:lightskyblue;
+         border: 1px solid;
+         border-radius: 20px;
+         transition: border-radius 1s ease;
+    }
+}
+
+/* Repair  hub  promises section*/
+
+
+.promises{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+}
+.promises h2{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #4285f4;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.Pro{
+    display: flex;
+    margin-top:40px;
+    justify-content: center;
+    gap: 20px 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.Pro li{
+    border: 1px solid #4285f4;
+    height: 200px;
+    border-radius: 10px;
+}
+.pro-img{
+    background-color: #4285f4;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 200px ;
+}
+
+.Pro li p{
+    text-align: center;
+    margin-top: 50px;
+    text-wrap: wrap;
+    font-size: 18px;
 }
 
 
