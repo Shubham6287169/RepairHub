@@ -82,4 +82,26 @@ function toggleMenu() {
 const menuToggle = document.querySelector('.menu-toggle');
 menuToggle.addEventListener('click', toggleMenu);
 
+// faq -section
+
+const accordians = document.querySelectorAll('.accordian');
+ 
+accordians.forEach(accordian =>{
+    const icon =accordian.querySelector('.icon');
+    const answer = accordian.querySelector('.answer');
+    
+    accordian.addEventListener('click',()=>{
+     
+        if(icon.classList.contains('rotate')){
+
+            icon.classList.remove('rotate');
+            answer.style.maxHeight = null;
+
+        }else{
+            icon.classList.add('rotate');
+            answer.style.maxHeight = answer.scrollHeight +"px";
+        }
+    })
+})
+
 
